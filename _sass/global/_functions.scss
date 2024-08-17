@@ -1,7 +1,9 @@
+@use "sass:math";
+
 // strip-unit
 @function strip-unit($number) {
   @if type-of($number) == "number" and not unitless($number) {
-    @return $number / ($number * 0 + 1);
+    @return math.div($number , ($number * 0 + 1));
   }
 
   @return $number;
@@ -17,7 +19,7 @@
     @return $value;
   }
 
-  $value: (strip-unit($px) / strip-unit($base)) * 1rem;
+  $value: math.div(strip-unit($px) , strip-unit($base)) * 1rem;
 
   @return $value;
 }
@@ -32,7 +34,7 @@
     @return $value;
   }
 
-  $value: (strip-unit($px) / strip-unit($base)) * 100vw;
+  $value: math.div(strip-unit($px) , strip-unit($base)) * 100vw;
 
   @return $value;
 }

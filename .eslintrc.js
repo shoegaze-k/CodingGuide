@@ -3,9 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["eslint:recommended", "prettier"],
-  parserOptions: {
-    ecmaVersion: 12,
-  },
+  extends: ["eslint:recommended", "plugin:eslint-comments/recommended", "prettier"],
+  overrides: [],
   rules: {},
 };
