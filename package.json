@@ -28,6 +28,8 @@
     "stylelint-config-recess-order": "^5.0.1",
     "stylelint-config-standard": "^36.0.1",
     "stylelint-config-standard-scss": "^13.1.0",
-    "stylelint-order": "^6.0.4"
+    "stylelint-order": "^6.0.4",
+    "stylelint-plugin-logical-css": "^1.2.1",
+    "stylelint-root-colors": "^0.0.3"
   }
 }
